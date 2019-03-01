@@ -22,9 +22,13 @@ nav a, h2, form, th, tr, button a  {
 nav {
   background-color: rgb(255, 127, 42);
 }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,1);
+}
 /*Navbar*/
 nav ul li a {
-  justify-content: space-around;
+  justify-content: space-around; 
 }
 nav ul li a::after {
   content: " |";
@@ -40,9 +44,7 @@ nav ul li a::after {
   background-color: #404040;
 }
 
-body {
-  padding: 0rem 10rem;
-}
+
 /*hover/portraits*/
 .reward strong {
   color: orange;
@@ -54,17 +56,6 @@ body {
   opacity: 0.5;
 }
 
-.card .reward {
-  position: absolute;
-  z-index: 0;
-  text-align: center;
-  border-radius: 10px;
-  font-size: 1.6em;
-  padding-top: 10px;
-  margin-top: 20%;
-  margin-right: 10%
-}
-
 .card:hover > .card-body span{
   opacity: initial;
   opacity: 0;
@@ -74,17 +65,41 @@ body {
   opacity: 1;
 }
 
+.card .reward {
+  position: absolute;
+  z-index: 0;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-top: 10%;
+  margin-left: 10%;
+  font-family: 'partybusiness';
+  font-size: 2.5em;
+}
+
 .card .dead {
   position: absolute;
   z-index: 0;
   text-align: center;
   border-radius: 10px;
-  font-size: 1.6em;
   padding-top: 10px;
-  margin-top: 20%;
-  margin-left: 40%
+  margin-top: 15%;
+  margin-left: 30%;
+  font-family: 'partybusiness';
+  font-size: 4em;
+  color: orange;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.card h5 {
+  font-size: 3em;
+  font-family: 'partybusiness';
 }
 
+.card p {
+  font-size: 2em;
+}
 .card-title {
   position: absolute;
   text-align: center;
@@ -96,17 +111,17 @@ body {
 }
 
 /* carousel */
-.header {
+.carousel-inner img {
   object-fit: cover;
-  height: 35rem;
+  height: 40em;
 }
 
-.phrase {
+.carousel-caption {
   position: absolute;
-  bottom: 8em;
-  left: 2em;
-  font-size: 2.5em;
-  font-family: 'partybusiness'
+  bottom: 30%;
+  left: 4em;
+  font-size: 20%;
+  font-family: 'partybusiness';
 }
 
 .carousel-black {
